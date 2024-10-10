@@ -1,0 +1,95 @@
+/* TODO: should be subsetted */
+@font-face {
+    /* Added third fallback if Arial is not available */
+    font-family: Helvetica, Arial, sans-serif;
+    src: url("assets/helvetica/Helvetica.ttf");
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+* {
+    /* Added fallback for Times New Roman */
+    font-family: 'Times New Roman', Georgia, serif;
+}
+
+h1,
+h2 {
+    font-weight: bold;   
+}
+
+h1 {
+    margin-top: 100px;
+}
+
+body {
+    background-image: url();
+    background-color: gray;
+    background-attachment: fixed;
+}
+
+header {
+    position: fixed;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: yellow;
+    
+}
+
+header nav ul li,
+footer nav ul li {
+    display: inline-block;
+    margin: 5px 15px;
+    background-color: aquamarine;
+}
+
+header nav ul,
+footer nav ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+section {
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+}
+
+.content {
+    max-width: 90%;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hashtag {
+    color: white;
+    background-color: transparent;
+}
+
+section>ul>li,
+.link {
+    background: linear-gradient(to bottom, aquamarine, lightblue);
+    list-style: none;
+}
+section>ul>li::before {
+    content: "-";
+    margin-left: -10px;
+}
+
+
+section>ul {
+    padding-left: 20px;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: #f0f0f0;
+}
