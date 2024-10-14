@@ -118,3 +118,13 @@ footer {
     position: relative;
     top: -60px;
 }
+
+.logo_as_button {
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.logo_as_button:hover {
+    transform: scale(1.1);
+}
