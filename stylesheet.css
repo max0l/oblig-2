@@ -20,6 +20,10 @@ h2 {
     margin: 0;
 }
 
+h1 {
+    font-size: 2em;
+}
+
 body {
     background-image: url();
     background-color: gray;
@@ -32,19 +36,18 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: yellow;
+    background-color: rgb(135, 98, 161);
     
 }
 
-header nav ul li,
-footer nav ul li {
-    display: inline-block;
-    margin: 5px 15px;
-    background-color: aquamarine;
-
+footer {
+    background-color: rgb(135, 98, 161);
+    padding: 10px 0;
 }
+
+
 header {
-    z-index: 999999;
+    z-index: 99;
 }
 
 header nav ul,
@@ -61,46 +64,23 @@ main {
 
 section {
     margin-bottom: 10px;
-    background-color: #f0f0f0;
-    padding: 10px;
-    border: 1px solid black;
+    background-color: white;
+    padding: 10px 20px;
 }
 
 .content {
-    max-width: 95%;
+    max-width: 80%;
     width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .hashtag {
-    background-color: #f0f0f0;
+    background-color: white;
     max-width: 70%;
     padding: 5px 5px;
     margin: 0;
-    border: 1px solid black;
-    border-top: none;
-    border-bottom: none;
-
 }
-
-
-.gradient {
-    background: linear-gradient(to bottom, aquamarine, lightblue);
-}
-
-section>ul {
-    background-color: #f0f0f0;
-}
-
-section>ul>li {
-    list-style: none;
-}
-section>ul>li::before {
-    content: "-";
-    margin-left: -10px;
-}
-
 
 section>ul {
     padding-left: 20px;
@@ -108,16 +88,82 @@ section>ul {
 
 footer {
     margin-top: 10px;
-    background-color: #f0f0f0;
+    background-color: white;
 }
 
+/* Section for text eleven */
+
+/* Is that really necessary? Or can h2 just be in the gradient? */
+.text-eleven {
+    background: linear-gradient(to bottom, #FFFFFF, #894cc2);
+}
+
+.outside-gradient {
+    background-color: white;
+}
+
+.text-eleven li {
+    list-style: none;
+}
+.text-eleven li::before {
+    content: "-";
+    margin-left: -10px;
+}
+
+
+.text-eleven>h2 {
+    background-color: white;
+}
+
+.text-eleven li {
+    padding-bottom: 20px;
+    padding-right: 15px;
+}
+
+.newHr {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: rgb(133, 133, 133);
+    margin-top: 20px;
+    margin: 20px auto;
+}
+
+
+.text-eleven a {
+    text-align: center;
+    display: block;
+    padding-bottom: 15px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-eleven a:link {
+    color: black;
+}
+
+.text-eleven a:visited {
+    color: hotpink;
+}
+
+.text-eleven a:hover {
+    color: hotpink;
+}
+
+.text-eleven a:active {
+    color: grey;
+}
+
+/* Section for text Twelve with cards */
 
 .event {
     max-width: 70%;
     margin: 10px;
     padding: 10px;
     border: 1px solid black;
-    background-color: #f0f0f0;
+    background-color: white;
 }
 
 .event2 {
@@ -148,4 +194,13 @@ footer {
 
 .no-top-margin {
     margin-top: 0;
+}
+
+
+.newHrBlack {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: black;
 }
