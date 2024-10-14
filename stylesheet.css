@@ -74,13 +74,26 @@ section {
 }
 
 .hashtag {
-    color: white;
-    background-color: transparent;
+    background-color: #f0f0f0;
+    max-width: 70%;
+    padding: 5px 5px;
+    margin: 0;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom: none;
+
 }
 
-section>ul>li,
-.link {
+
+.gradient {
     background: linear-gradient(to bottom, aquamarine, lightblue);
+}
+
+section>ul {
+    background-color: #f0f0f0;
+}
+
+section>ul>li {
     list-style: none;
 }
 section>ul>li::before {
@@ -117,4 +130,12 @@ footer {
 .event3 {
     position: relative;
     top: -60px;
+}
+
+.no-botton-margin {
+    margin-bottom: 0;
+}
+
+.no-top-margin {
+    margin-top: 0;
 }
