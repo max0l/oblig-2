@@ -68,6 +68,12 @@ header a {
     text-decoration: none;
 }
 
+a {
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
 header nav ul,
 footer nav ul {
     padding-left: 0;

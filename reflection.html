@@ -1,54 +1,80 @@
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Document</title>
+</head>
 
 <header>
-
     <nav>
-
     </nav>
 </header>
 
 <body>
-
-<!--
-- What should be the background color be?
-- Top Nav Bar: what color? Free to chose is not a good description.
+    <div class="content">
+        <!--
+- What should the background color be?
+- Top Nav Bar: what color? "Free to choose" is not a good description.
 - Where is the 8-16px margin applied, is it the absolute value or on both sides?
-- What are those boxes? Should the content only contain it or should they also be present? If yes, what color
-- open links in new tabs was not stated but added
+- What are those boxes? Should the content only contain it or should they also be present? If yes, what color?
+- Opening links in new tabs was not stated but added.
 - What to do with 11.10?
-new: - Where should be the first nav bar link lead to? Hashtag or text one? -> We made it to text one
+- Where should be the first nav bar link lead to? Hashtag or text one? -> We made it to text one
 
 Good:
-- there are manz values given for varius sizes
+- There are many values given for various sizes
 -->
 
-    <h1>Reflection Page</h1>
+        <h1>Reflection Page</h1>
+        <div class="event event1">
+            <h2>Reflection 1</h2>
+            <h3>Evaluation of the Received Mock-up</h3>
+            <p>We received the mock-up made by <strong>group 12</strong>, and these are the observations we made when
+                looking through their work:</p>
+            <ul>
+                <li>The instructions were a wall of text, and the information should be organized in a more readable
+                    manner.</li>
+                <li>Some of the instructions were unclear or not as precise as we needed. Thus, we had to interpret and
+                    guess what they wanted us to do.</li>
+                <li>We were given a broad set of fonts to use, but some of them are not optimal for user readability,
+                    breaking the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> rules.
+                    Even though fonts like Times New Roman are widely used, they present problems for accessibility.
+                    To make the site accessible to a majority of users, a sans-serif font where letters like 'a' and 'e'
+                    have large enough openings (apertures) to be distinguishable is important.</li>
+            </ul>
+        </div>
 
-    <h2>Reflection 1<h2>
-        <h3>Evaluation of the Received Mock-up</h3>
-        <p>We recieved the mock-up made by <strong>group 12</strong>, these are the observations we did when looking through their work:</p>
-        <ul>
-            <li>The instructions was a wall of text, the information should be organized in a more readable manner.</li>
-            <li>Some of the instructions were unclear/as precise as we needed.</li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        
-    <h2>Reflection 2<h2>
-        <h3>Self-Assessment of Your Own Mock-up</h3>
+        <div class="event event2">
+            <h2>Reflection 2</h2>
+            <h3>Self-Assessment of Your Own Mock-up</h3>
 
-        <p>We, <strong>group 16</strong>, bla bla bla</p>
-    
-        <h2>Reflection 3<h2>
-        <h3>Sustainability Assessment</h3>
-        <ul>
-            <li>Converted all images to <dfn><abbr title="Web Picture">.webp</abbr>, a file format designed for web.</dfn> The file format has a better compression rate than ie .png or .jpg, saving up to 24-36% bandwith</li>
-            <li>Before converting to .webp the pictures on the site used 104 KB, afer converstion they were 57.3 KB</li>
-            <li>A limited color palette</li>
-            <li>Using standard fonts that are avaliable on most systems</li>
-        </ul>
+            <p>We, <strong>group 16</strong>, have done our own assessment.</p>
+
+            <ul>
+                <li>Our fonts are sans-serif fonts, chosen mainly for their readability.</li>
+                <li>We've chosen a minimalist design approach to ensure clarity and simplicity for users.</li>
+            </ul>
+        </div>
+
+        <div class="event event3">
+            <h2>Reflection 3</h2>
+            <h3>Sustainability Assessment</h3>
+            <ul>
+                <li>Converted all images to <dfn><abbr title="Web Picture">.webp</abbr>, a file format designed for the
+                        web. The file format has a better compression rate than, for example, .png or .jpg, saving up to
+                        24-36% in bandwidth.</li>
+                <li>Before converting to .webp, the pictures for the logos used 104 KB. After conversion, they were 57.3
+                    KB.</li>
+                <li>We used a limited color palette, reducing bandwidth load. Our palette consists of medium intensity
+                    colors, including a mid-range purple and gray background, balancing design needs with
+                    sustainability.</li>
+                <li>Using standard fonts available on most systems reduces the need for the local machine to download
+                    and install extra fonts, saving bandwidth and storage on both the host and the client.</li>
+            </ul>
+        </div>
+    </div>
 </body>
-
 
 </html>
