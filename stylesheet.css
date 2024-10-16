@@ -5,6 +5,14 @@
     src: url("assets/helvetica/Helvetica.ttf");
 }
 
+
+/* To ensure that the links don't overflow */
+a {
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
 h1,
 h2,
 h3,
@@ -42,17 +50,12 @@ header {
     left: 0;
     width: 100%;
     background-color: rgb(135, 98, 161);
-
+    z-index: 99;
 }
 
 footer {
     background-color: rgb(135, 98, 161);
     padding: 10px 0;
-}
-
-
-header {
-    z-index: 99;
 }
 
 header nav ul li,
