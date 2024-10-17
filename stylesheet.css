@@ -296,11 +296,23 @@ a:visited {
 
     main {
         margin: 0 auto;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        margin-bottom: -90px;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
+    #tableLayout {
+        display: flex;
+        display: -webkit-flex;
+    }
+
+    #firstColumn {
+        flex-grow: 1;
+        max-width: 60%;
+    }
+
+    #text-one,
     .textfourtosix,
     h1,
     .textseventoten {
@@ -308,26 +320,31 @@ a:visited {
     }
 
     .text-one {
-        grid-column: 1 / 3;
-        grid-row: 1;
         width: 100%;
         box-sizing: border-box;
     }
 
     .text-two {
-        grid-column: 1;
-        grid-row: 2;
-        width: 70%;
+        width: 50%;
     }
 
-    .hashbox {
-        grid-column: 1;
-        grid-row: 3;
-    }
 
     #text-three {
         padding: 10px 20px;
+        max-width: 50%;
     }
+
+
+
+    .textfourtosix {
+        flex-grow: 1;
+    }
+
+    .textseventoten {
+
+        flex-grow: 10;
+    }
+
 
     /* https://stackoverflow.com/a/14745429 */
     .text-eleven ul {
