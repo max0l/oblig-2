@@ -29,7 +29,7 @@ h2 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 }
 
 h2 {
@@ -286,8 +286,14 @@ footer {
         width: 70%;
     }
 
-    .hashbox {
-        
+    .textFour p,
+    .textFive p,
+    .textSix p {
+        flex-grow: 0.5;
+    }
+
+    .textSevenToTen {
+        flex-flow: wrap;
     }
 
     .hashtag {
@@ -304,13 +310,6 @@ footer {
     .text-eleven {
         background: white;
 
-    }
-
-    .events {
-
-    }
-
-    .event3 {
     }
 
 }
