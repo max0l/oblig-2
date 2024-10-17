@@ -104,7 +104,18 @@ main {
     margin-top: 100px;
 }
 
-section {
+#text-one,
+#text-two {
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+#text-two {
+    margin-bottom: 0;
+}
+
+.textfourtosix {
     margin-bottom: 10px;
     background-color: white;
     padding: 10px 20px;
@@ -117,7 +128,9 @@ section {
     margin-right: auto;
 }
 
-.hashtag {
+
+
+#text-three {
     background-color: white;
     max-width: 70%;
     padding: 5px 5px;
@@ -134,6 +147,21 @@ footer {
 }
 
 /* Section for text eleven */
+
+/* Section for text seven to ten */
+#textseventoten {
+    background-color: #f7eeff;
+    
+}
+
+a {
+    color:#9B79B2;
+}
+
+a:visited {
+    color:#6D4984;
+}
+
 
 /* Is that really necessary? Or can h2 just be in the gradient? */
 .text-eleven {
@@ -273,7 +301,9 @@ footer {
         justify-content: flex-start;
     }
 
-    section {
+    .textfourtosix,
+    h1,
+    .textseventoten {
         margin-bottom: 0;
     }
 
@@ -296,7 +326,7 @@ footer {
         flex-flow: wrap;
     }
 
-    .hashtag {
+    #text-three {
         padding: 10px 20px;
     }
 
