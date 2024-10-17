@@ -4,77 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <title>Document</title>
+    <title>Reflection Page for Group 16 – Web Coding Project</title>
 </head>
 
+<body>
+
 <header>
-    <nav>
-    </nav>
+     <nav>
+         <ul>
+            <li><a href="#link1">Reflection 1</a></li>
+            <li><a href="#link2">Reflection 2</a></li>
+            <li><a href="#link3">Reflection 3</a></li>
+         </ul>
+      </nav>
 </header>
 
-<body>
+<main>
     <div class="content">
-        <!--
-- What should the background color be?
-- Top Nav Bar: what color? "Free to choose" is not a good description.
-- Where is the 8-16px margin applied, is it the absolute value or on both sides?
-- What are those boxes? Should the content only contain it or should they also be present? If yes, what color?
-- Opening links in new tabs was not stated but added.
-- What to do with 11.10?
-- Where should be the first nav bar link lead to? Hashtag or text one? -> We made it to text one
+        <div class="reflections">
 
-Good:
-- There are many values given for various sizes
--->
+            <h1>Reflection Page</h1>
 
-        <h1>Reflection Page</h1>
-        <div class="event event1">
-            <h2>Reflection 1</h2>
-            <h3>Evaluation of the Received Mock-up</h3>
-            <p>We received the mock-up made by <strong>group 12</strong>, and these are the observations we made when
-                looking through their work:</p>
-            <ul>
-                <li>The instructions were a wall of text, and the information should be organized in a more readable
-                    manner.</li>
-                <li>Some of the instructions were unclear or not as precise as we needed. Thus, we had to interpret and
-                    guess what they wanted us to do.</li>
-                <li>We were given a broad set of fonts to use, but some of them are not optimal for user readability,
-                    breaking the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> rules.
-                    Even though fonts like Times New Roman are widely used, they present problems for accessibility.
-                    To make the site accessible to a majority of users, a sans-serif font where letters like 'a' and 'e'
-                    have large enough openings (apertures) to be distinguishable is important.</li>
-            </ul>
-        </div>
+            <section class="reflection1" id="link1">
+                <h2>Reflection 1</h2>
+                <h3>Evaluation of the Received Mock-up</h3>
+                <p>We received the mock-up made by <strong>group 12</strong>, and these are the observations we made when
+                    looking through their work:</p>
+                <strong>Not so good</strong>
+                <ul>
+                    <li>The instructions were a wall of text, and the information should be organized in a more readable
+                        manner.</li>
+                    <li>The mock-up was hard to read because of the grey color of the pencil.</li>
+                    <li>Some of the instructions were unclear or not as precise as we needed. Thus, we had to interpret and
+                        guess what they wanted us to do. Example, the 'EVENTS' ought to be bold or a header, missing description.
+                        There's also a box around the text 12.1, 12.2, and 12.3, but no explanation on what this is.</li>
+                    <li>We were given a broad set of fonts to use, but some of them are not optimal for user readability,
+                        breaking the <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> rules.
+                        Even though fonts like Times New Roman are widely used, they present problems for accessibility.
+                        To make the site accessible to a majority of users, a sans-serif font where letters like 'a' and 'e'
+                        have large enough openings (apertures) to be distinguishable is important.</li>
+                    <li>Some of the other issues we found lacking:
+                        <ul>
+                            <li>Top Nav Bar: what color? "Free to choose" is not a good description.</li>
+                            <li>Where is the 8-16px margin applied? Is it the absolute value or on both sides?</li>
+                            <li>Opening links in new tabs was not stated but added.</li>
+                            <li>Where should the first nav bar link lead to? Hashtag or text one? → We made it to text one.</li>
+                            <li>What are those boxes? Should the content only contain them, or should they also be present? If yes, what color?</li>
+                            <li>What to do with 11.10?</li>
+                        </ul>
+                    </li>
+                    <li>The design of the site is more of a Grid layout than Flex (we managed to miss the small text about not using Grid, our fault), we had to tinker a bit to get the code to work.</li>
+                </ul>
 
-        <div class="event event2">
-            <h2>Reflection 2</h2>
-            <h3>Self-Assessment of Your Own Mock-up</h3>
+                <strong>Good</strong>
+                <ul>
+                    <li>There are many values given for various sizes.</li>
+                    <li>They used a ruler to make the mock-up clear and readable</li>
+                    <li>They made a desktop version of the mock-up</li>
+                    <li>Included a fixed navbar making it more organize</li>
+                </ul>
 
-            <p>We, <strong>group 16</strong>, have done our own assessment.</p>
+                <p>To address the issues, we modified the font choices to more accessible sans-serif fonts, organized the information in clearer sections, and added descriptions where missing. We used absolute positioning in some areas to place elements more precisely where needed, especially for navigation and boxes around sections.</p>
 
-            <ul>
-                <li>Our fonts are sans-serif fonts, chosen mainly for their readability.</li>
-                <li>We've chosen a minimalist design approach to ensure clarity and simplicity for users.</li>
-            </ul>
-        </div>
+                <p><strong>Rating:</strong> We rate the effectiveness of the received mock-up a 3/5.</p>
+            </section>
 
-        <div class="event event3">
-            <h2>Reflection 3</h2>
-            <h3>Sustainability Assessment</h3>
-            <ul>
-                <li>Converted all images to <dfn><abbr title="Web Picture">.webp</abbr>, a file format designed for the
+            <section class="reflection2" id="link2">
+                <h2>Reflection 2</h2>
+                <h3>Self-Assessment of Your Own Mock-up</h3>
+                <p>We, <strong>group 16</strong>, have done our own assessment.</p>
+
+                <strong>Not so good</strong>
+                <ul>
+                    <li>Our mock-up did not have any navigation tool, so navigating back and forth the newsletter could be challenging.</li>
+                    <li>We did not create a sketch mock-up for the desktop version of our website. This probably could have made it harder
+                        for the group that got our mock-up to design it like we visioned it to be.</li>
+                </ul>
+                
+                <strong>Good</strong>
+                <ul>
+                    <li>Our fonts are sans-serif fonts, chosen mainly for their readability.</li>
+                    <li>We've chosen a minimalist design approach to ensure clarity and simplicity for users.</li>
+                    <li>Had the developer in mind, thus we tried to make a design that wouldn't be too hard to code for a junior developer.</li>
+                </ul>
+           
+                <p>In our assessment our mock-up met the objectives well, of couse some areas could have been clearer.</p>
+
+                <p><strong>Rating:</strong> We rate our own mock-up a 4/5.</p>
+            </section>
+
+            <section class="reflection3" id="link3">
+                <h2>Reflection 3</h2>
+                <h3>Sustainability Assessment</h3>
+                <ul>
+                    <li>Converted all images to <abbr title="Web Picture">.webp</abbr>, a file format designed for the
                         web. The file format has a better compression rate than, for example, .png or .jpg, saving up to
                         24-36% in bandwidth.</li>
-                <li>Before converting to .webp, the pictures for the logos used 104 KB. After conversion, they were 57.3
-                    KB.</li>
-                <li>We used a limited color palette, reducing bandwidth load. Our palette consists of medium intensity
-                    colors, including a mid-range purple and gray background, balancing design needs with
-                    sustainability.</li>
-                <li>Using standard fonts available on most systems reduces the need for the local machine to download
-                    and install extra fonts, saving bandwidth and storage on both the host and the client.</li>
-            </ul>
+                    <li>Before converting to .webp, the pictures for the logos used 104 KB. After conversion, they were 57.3
+                        KB.</li>
+                    <li>We used a limited color palette, reducing bandwidth load. Our palette consists of medium intensity
+                        colors, including a mid-range purple and gray background, balancing design needs with
+                        sustainability.</li>
+                    <li>Using standard fonts available on most systems reduces the need for the local machine to download
+                        and install extra fonts, saving bandwidth and storage on both the host and the client.</li>
+                </ul>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Before (.jpg/.png) Size</th>
+                            <th>After (.webp) Size</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Background image</td>
+                            <td>0 KB</td>
+                            <td>0 KB</td>
+                        </tr>
+
+                        <tr>
+                            <td>Logo - Mental Helse</td>
+                            <td>208 KB</td>
+                            <td>13.9 KB</td>
+                        </tr>
+                        <tr>
+                            <td>Logo - NTNU</td>
+                            <td>125 KB</td>
+                            <td>19.1 KB</td>
+                        </tr>
+                        <tr>
+                            <td>Logo - SIT</td>
+                            <td>16.7 KB</td>
+                            <td>3.79 KB</td>
+                        </tr>
+                        <tr>
+                            <td>Logo - SATS</td>
+                            <td>9.48 KB</td>
+                            <td>8.14  KB</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p></p>
+            </section>
         </div>
     </div>
+</main>
+
+<div class="newHrBlack"></div>
+
+<footer id="reflection-footer">
+    <p>
+        This website has been developed with digital sustainability in mind, and we have
+        used some of the best practices to reduce the carbon footprint of this website.
+        Please click here to learn more about how we created this website with digital
+        sustainability in mind.
+    </p>
+    <div class="newHr"></div>
+    <p>
+        This page was created by Group 16 as a project for the course IDG1292: Web
+        Coding. The members of the group are: Benjamin Godtfred Hagvin (ARWEB),
+        Maivy Luong (BIXD), Michelle Cat Nhu Tran (BIXD), Max Ferdinand Löbel (ERASMUS), and Øystein Huse (ARWEB).
+    </p>
+</footer>
+
 </body>
 
 </html>
+
