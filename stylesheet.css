@@ -296,33 +296,49 @@ a:visited {
         display: -webkit-flex;
         flex-direction: column;
         justify-content: flex-start;
+
     }
 
+    #tableLayout {
+        display: flex;
+        display: -webkit-flex;
+    }
+
+    #firstColumn {
+        flex-grow: 1;
+        max-width: 60%;
+    }
+
+    #text-one,
     .textfourtosix,
     h1,
     .textseventoten {
         margin-bottom: 0;
     }
 
-    .text-one {
+    #text-one {
         width: 100%;
         box-sizing: border-box;
     }
 
-    .text-two {
-        width: 70%;
+    #text-two {
+        max-width: 50%;
+    }
+    
+    #text-three {
+        padding: 10px 20px;
+        max-width: 50%;
     }
 
+
+
     .textfourtosix {
-        flex-grow: 0.5;
+        flex-grow: 1;
     }
 
     .textseventoten {
-        flex-flow: wrap;
-    }
 
-    #text-three {
-        padding: 10px 20px;
+        flex-grow: 10;
     }
 
     /* https://stackoverflow.com/a/14745429 */
@@ -330,11 +346,6 @@ a:visited {
         columns: 2;
         -webkit-columns: 2;
         -moz-columns: 2;
-    }
-
-    .text-eleven {
-        background: white;
-
     }
 
 }
