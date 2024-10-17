@@ -1,7 +1,7 @@
 /* TODO: should be subsetted */
 @font-face {
     /* Added third fallback if Arial is not available */
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Helvetica;
     src: url("assets/helvetica/Helvetica.ttf");
 }
 
@@ -247,7 +247,7 @@ footer {
 }
 
 
-@media screen and (min-width: 960) {
+@media screen and (min-width: 960px) {
     header {
         max-width: 10%;
         background-color: rgb(0, 0, 0, 0);
