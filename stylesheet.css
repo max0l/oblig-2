@@ -75,7 +75,7 @@ footer {
 
 header nav ul li {
     display: inline-block;
-    margin: 5px 15px;
+    margin: 5px 0;
     background-color: white;
     padding: 10px;
 }
@@ -94,8 +94,10 @@ a {
 header nav ul {
     padding-left: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style: none;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 main {
@@ -186,6 +188,15 @@ a:visited {
 .text-eleven li {
     padding-bottom: 20px;
     padding-right: 15px;
+}
+
+/* TODO: Think about this */
+.text-eleven li:nth-child(odd) {
+    background: linear-gradient(to bottom, #f7eeff, #FFFFFF);
+}
+
+.text-eleven li:nth-child(even) {
+    background: linear-gradient(to bottom, #FFFFFF, #f7eeff);
 }
 
 .newHr {
@@ -283,6 +294,8 @@ a:visited {
     header nav ul {
         display: inline;
         padding: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     header nav ul li {
