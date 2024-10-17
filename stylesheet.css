@@ -105,7 +105,11 @@ main {
 }
 
 #text-one,
-#text-two {
+#text-two,
+.text-eleven, 
+.textfourtosix,
+.textseventoten,
+.events {
     margin-bottom: 10px;
     background-color: white;
     padding: 10px 20px;
@@ -113,12 +117,6 @@ main {
 
 #text-two {
     margin-bottom: 0;
-}
-
-.textfourtosix {
-    margin-bottom: 10px;
-    background-color: white;
-    padding: 10px 20px;
 }
 
 .content {
@@ -137,7 +135,7 @@ main {
     margin: 0;
 }
 
-section>ul {
+.text-eleven>ul {
     padding-left: 20px;
 }
 
@@ -149,9 +147,8 @@ footer {
 /* Section for text eleven */
 
 /* Section for text seven to ten */
-#textseventoten {
+.textseventoten {
     background-color: #f7eeff;
-    
 }
 
 a {
@@ -316,13 +313,11 @@ a:visited {
         width: 70%;
     }
 
-    .textFour p,
-    .textFive p,
-    .textSix p {
+    .textfourtosix {
         flex-grow: 0.5;
     }
 
-    .textSevenToTen {
+    .textseventoten {
         flex-flow: wrap;
     }
 
