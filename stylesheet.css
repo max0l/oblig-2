@@ -1,8 +1,13 @@
 /* TODO: should be subsetted */
 @font-face {
-    /* Added third fallback if Arial is not available */
     font-family: Helvetica;
-    src: url("assets/helvetica/Helvetica.ttf");
+    src: url('helvetica-webfont.woff2') format('woff2'),
+         url('helvetica-webfont.woff') format('woff'),
+         url('helvetica-webfont.ttf') format('truetype'),
+         url('helvetica-webfont.svg#helveticaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 * {
