@@ -21,21 +21,24 @@
     </header>
 
     <main>
-        <div class="content reflections">
-            <h1>Reflection Page</h1>
+        <div class="content">
+            <h1 id="text-one">Reflection Page</h1>
 
             <section class="reflection1" id="link1">
                 <h2>Reflection 1</h2>
                 <h3>Evaluation of the Received Mock-up</h3>
-                <p>We received the mock-up made by <strong>group 12</strong>, and these are the observations we made
+                <p>We received the mock-up made by <span class="isBold">group 12</span>, and these are the observations we made
                     when
                     looking through their work:</p>
-                <strong>Not so good</strong>
+                <span class="isBold">Not so good</span>
                 <ul>
                     <li>The instructions were a wall of text, and the information should be organized in a more
                         readable
                         manner.</li>
-                    <li>The mock-up was hard to read because of the grey color of the pencil.</li>
+                    <li>The mock-up was hard to read. The writing was unclear as well as their english was a little hard
+                        to understand. They only wrote using a pencil making it hard to read properly.
+                        It would have been easier, had they used a black pen to write or provided a scanned version.</li>
+                    
                     <li>Some of the instructions were unclear or not as precise as we needed. Thus, we had to
                         interpret and
                         guess what they wanted us to do. Example, the 'EVENTS' ought to be bold or a header, missing
@@ -53,6 +56,8 @@
                     <li>Some of the other issues we found lacking:
                         <ul>
                             <li>Top Nav Bar: what color? "Free to choose" is not a good description.</li>
+                            <li>They said to add a margin to make it aesthetically pleasing, but where do we add it?
+                            </li>
                             <li>Where is the 8-16px margin applied? Is it the absolute value or on both sides?</li>
                             <li>Opening links in new tabs was not stated but added.</li>
                             <li>Where should the first nav bar link lead to? Hashtag or text one? → We made it to
@@ -60,18 +65,32 @@
                             <li>What are those boxes? Should the content only contain them, or should they also be
                                 present? If yes, what color?</li>
                             <li>What to do with 11.10?</li>
+                            <li>They said to make the "title" bold for text 12.1, but they don't specify how. Do we use
+                                HTML or CSS?
+                                We decided on using CSS to make them bold.</li>
                         </ul>
                     </li>
+                    <li>We felt like the hyphon was hard to implement and not really necessary for the website.</li>
                     <li>The design of the site is more of a Grid layout than Flex (we managed to miss the small text
                         about not using Grid, our fault), we had to tinker a bit to get the code to work.</li>
+                    <li>
+                        We had a problem finding a way to include the nth-child pseudo-class or find where to add it.
+                        So we added a gradient to the List items of the Text 11.X to create a wave effect using gradient
+                        and nth-child pseudo-class.
+                    </li>
+                    <li>
+                        We had to use absulote positioning for the Navbar.
+                    </li>
+                    <li>
+                        We had to use relative positioning for the card layouts for the events.
+                    </li>
                 </ul>
 
-                <strong>Good</strong>
+                <span class="isBold">Good</span>
                 <ul>
                     <li>There are many values given for various sizes.</li>
-                    <li>They used a ruler to make the mock-up clear and readable</li>
                     <li>They made a desktop version of the mock-up</li>
-                    <li>Included a fixed navbar making it more organize</li>
+                    <li>Included a fixed navbar making it more organized</li>
                 </ul>
 
                 <p>To address the issues, we modified the font choices to more accessible sans-serif fonts,
@@ -79,35 +98,36 @@
                     absolute positioning in some areas to place elements more precisely where needed, especially for
                     navigation and boxes around sections.</p>
 
-                <p><strong>Rating:</strong> We rate the effectiveness of the received mock-up a 3/5.</p>
+                <p><span class="isBold">Rating:</span> We rate the effectiveness of the received mock-up a 3/5.</p>
             </section>
 
             <section class="reflection2" id="link2">
                 <h2>Reflection 2</h2>
                 <h3>Self-Assessment of Your Own Mock-up</h3>
-                <p>We, <strong>group 16</strong>, have done our own assessment.</p>
+                <p>We, <span class="isBold">group 16</span>, have done our own assessment.</p>
 
-                <strong>Not so good</strong>
+                <span class="isBold">Not so good</span>
                 <ul>
                     <li>Our mock-up did not have any navigation tool, so navigating back and forth the newsletter
                         could be challenging.</li>
-                    <li>We did not create a sketch mock-up for the desktop version of our website. This probably
+                    <li>We did not create a sketch mock-up for the desktop version of our website. This
                         could have made it harder
                         for the group that got our mock-up to design it like we visioned it to be.</li>
+                    <li>We might be too minimalist in our approach to make a really interesting site design wise.</li>
                 </ul>
 
-                <strong>Good</strong>
+                <span class="isBold">Good</span>
                 <ul>
                     <li>Our fonts are sans-serif fonts, chosen mainly for their readability.</li>
                     <li>We've chosen a minimalist design approach to ensure clarity and simplicity for users.</li>
-                    <li>Had the developer in mind, thus we tried to make a design that wouldn't be too hard to code
+                    <li>We had the developer in mind, thus we tried to make a design that wouldn't be too hard to code
                         for a junior developer.</li>
                 </ul>
 
                 <p>In our assessment our mock-up met the objectives well, of couse some areas could have been
                     clearer.</p>
 
-                <p><strong>Rating:</strong> We rate our own mock-up a 4/5.</p>
+                <p><span class="isBold">Rating:</span> We rate our own mock-up a 4/5.</p>
             </section>
 
             <section class="reflection3" id="link3">
@@ -129,8 +149,20 @@
                     <li>Using standard fonts available on most systems reduces the need for the local machine to
                         download
                         and install extra fonts, saving bandwidth and storage on both the host and the client.</li>
+                    <li>For the background image. We have taken a part of a picture, converted it to a .webp and only
+                        used a small bit of the picture with a repeating pattern. The Pictue was 30kB when it was a png.
+                        After converting it to the webp format, it was only 14kB.
+                    </li>
+                    <li>
+                        Since we are using Times new Roman as a font, we dont have to include it/ship it to the end
+                        user, because it is a websafe font. This means it is preinstalled on most of the devices.
+                    </li>
+                    <li>
+                        We reduced to font file size of the helvetica font from 311KB to 19KB (in the smallest form factor: woff2).
+                    </li>
                 </ul>
 
+                <!--https://www.w3schools.com/html/html_tables.asp -->
                 <table>
                     <thead>
                         <tr>
@@ -142,8 +174,8 @@
                     <tbody>
                         <tr>
                             <td>Background image</td>
-                            <td>0 KB</td>
-                            <td>0 KB</td>
+                            <td>30 KB</td>
+                            <td>14 KB</td>
                         </tr>
 
                         <tr>
@@ -166,21 +198,27 @@
                             <td>9.48 KB</td>
                             <td>8.14 KB</td>
                         </tr>
+                        <tr>
+                            <td>helvetica font</td>
+                            <td>311 KB</td>
+                            <td>19 KB (woff2)</td>
+                        </tr>
                     </tbody>
                 </table>
-
                 <p></p>
+                <p>The total size of the pictures was 389.19 KB, and after compression to .webp, it was 58.93 KB. This
+                    represents a total reduction of 330.26 KB, which is an 84.85% reduction in size.</p>
+                <p>The reduction in font size saved 292 KB, a size reduction of 93.89%</p>
             </section>
         </div>
     </main>
-
-    <div class="newHrBlack"></div>
 
     <footer id="reflection-footer">
         <p>
             This website has been developed with digital sustainability in mind, and we have
             used some of the best practices to reduce the carbon footprint of this website.
-            Please click here <a href="reflection.html">reflections.html</a> to learn more about how we created this website with digital
+            Please click here <a href="reflection.html">reflections.html</a> to learn more about how we created this
+            website with digital
             sustainability in mind.
         </p>
         <div class="newHr"></div>
