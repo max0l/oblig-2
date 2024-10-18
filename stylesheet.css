@@ -90,6 +90,7 @@ header a {
     text-decoration: none;
 }
 
+/* https://stackoverflow.com/a/7309193 */
 a {
     word-wrap: break-word;
 }
