@@ -56,7 +56,7 @@ p {
 }
 
 body {
-    background-image: url(media/background.webp);
+    background-image: url(assets/media/background.webp);
     background-color: gray;
     background-attachment: fixed;
     background-repeat: repeat;
