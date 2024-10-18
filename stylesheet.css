@@ -92,8 +92,6 @@ header a {
 
 a {
     word-wrap: break-word;
-    word-break: break-all;
-    overflow-wrap: break-word;
 }
 
 header nav ul {
@@ -343,12 +341,12 @@ a:visited {
     }
 
     #text-two {
-        max-width: 50%;
+        max-width: 60%;
     }
 
     #text-three {
         padding: 10px 20px;
-        max-width: 50%;
+        max-width: 60%;
     }
 
     .textfourtosix {
